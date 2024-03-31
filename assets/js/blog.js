@@ -1,20 +1,22 @@
 const init = function() {
-    let blogEntry = JSON.parse(localStorage.getItem("blog"))
+    let blogArray = JSON.parse(localStorage.getItem("blog"))
 
-    console.log(blogEntry);
+    console.log(blogArray);
 
-    if (blogEntry !== null) {
-        const h3 = document.createElement('h3');
-        const pContent = document.createElement('p');
-        const pName = document.createElement('p');
+    if (blogArray !== null) {
+        for (i = 0; i < blogArray.length; i++) {
+            const h3 = document.createElement('h3');
+            const pContent = document.createElement('p');
+            const pName = document.createElement('p');
 
-        h3.textContent = blogEntry.title;
-        pContent.textContent = blogEntry.content;
-        pName.textContent = blogEntry.name;
+            h3.textContent = blogArray[i].title;
+            pContent.textContent = blogArray[i].content;
+            pName.textContent = blogArray[i].name;
 
-        document.body.appendChild(h3);
-        document.body.appendChild(pContent);
-        document.body.appendChild(pName);
+            document.body.appendChild(h3);
+            document.body.appendChild(pContent);
+            document.body.appendChild(pName);
+        }
     }
 }
 

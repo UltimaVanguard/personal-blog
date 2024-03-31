@@ -3,6 +3,12 @@ const titleInput = document.querySelector('#title');
 const contentInput = document.querySelector('#blog-post');
 const submitButton = document.querySelector('#submit');
 
+let blogArray = [];
+
+let init = function() {
+    blogArray = JSON.parse(localStorage.getItem("blog"))
+}
+
 submitButton.addEventListener('click', function(event) {
     event.preventDefault();
 
@@ -12,6 +18,9 @@ submitButton.addEventListener('click', function(event) {
         content: contentInput.value,
     }
 
-    localStorage.setItem("blog", JSON.stringify(blogEntry));
+    blogArray.push(blogEntry);
+    localStorage.setItem("blog", JSON.stringify(blogArray));
     location.href='./blog.html';
 })
+
+init();
