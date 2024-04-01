@@ -16,21 +16,21 @@
         </header>
 
         <main>
-            <h2>Blog Entry</h2>
             <form id="blog-form">
-                <section class="blog-post">
-                    <label for="full-name">Name</label>
+                <h2 id="blog-heading">Blog Entry</h2>
+                <section class="blog-form" id="full-name-section">
+                    <label for="full-name">Name:</label>
                     <input type="text" name="full-name" id="full-name" placeholder="First Last"/>
                 </section>
-                <section class="blog-post">
-                    <label for="title">Blog Title</label>
+                <section class="blog-form" id="title-section">
+                    <label for="title">Blog Title:</label>
                     <input type="text" name="title" id="title" placeholder="Title"/>
                 </section>
-                <section class="blog-post">
-                    <label for="content">Blog Post</label>
-                    <input type="text" name="blog-post" id="blog-post" placeholder="Post"/>
+                <section class="blog-form" id="blog-post-section">
+                    <label for="blog-post">Blog Post:</label>
+                    <textarea name="blog-post" id="blog-post" placeholder="Post"></textarea>
                 </section>
-                <section class="blog-post">
+                <section class="blog-form" id="submit-section">
                     <button id="submit">Submit</button>
                 </section>
             </form>
