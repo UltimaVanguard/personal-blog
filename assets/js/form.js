@@ -19,6 +19,11 @@ formEl.addEventListener('submit', function(event) {
         content: contentInput.value,
     }
 
+    if(!nameInput.value || !titleInput.value || !contentInput.value) {
+       alert('Please finish filling out the form.');
+        return;
+    }
+
     blogArray.push(blogEntry);
     localStorage.setItem("blog", JSON.stringify(blogArray));
     location.href='./blog.html';
