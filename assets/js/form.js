@@ -1,3 +1,4 @@
+const formEl = document.querySelector('#blog-form');
 const nameInput = document.querySelector('#full-name');
 const titleInput = document.querySelector('#title');
 const contentInput = document.querySelector('#blog-post');
@@ -9,7 +10,7 @@ let init = function() {
     blogArray = JSON.parse(localStorage.getItem("blog"))
 }
 
-submitButton.addEventListener('click', function(event) {
+formEl.addEventListener('submit', function(event) {
     event.preventDefault();
 
     const blogEntry = {
