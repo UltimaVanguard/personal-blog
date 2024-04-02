@@ -13,9 +13,9 @@ const init = function() {
             pContent.textContent = blogArray[i].content;
             pName.textContent = blogArray[i].name;
 
-            document.body.appendChild(h3);
-            document.body.appendChild(pContent);
-            document.body.appendChild(pName);
+            document.body.children[1].appendChild(h3);
+            document.body.children[1].appendChild(pContent);
+            document.body.children[1].appendChild(pName);
         }
     }
 }

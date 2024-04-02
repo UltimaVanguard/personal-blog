@@ -26,6 +26,7 @@ body {
 }
 
 header {
+    position: relative;
     font-size: 150%;
     display: flex;
     flex-direction: column;
@@ -42,10 +43,10 @@ main {
 
 form {
     display: flex;
-    flex-flow: row wrap;
-    align-items: start;
+    flex-flow: column;
+    align-items: center;
     justify-content: flex-start;
-    width: 96%;
+    width: 100%;
     font-size: 125%;
 }
 
@@ -55,19 +56,25 @@ form section {
 }
 
 footer {
+    position: relative;
     font-size: 125%;
     line-height: 1.5;
     text-align: center;
-    width: 96%;
-    margin: 20px;
+    width: 100%;
+    padding: 20px;
     flex-shrink: 0;
+    background-color: var(--sky);
 }
 
-.blog-form {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
+a {
+    text-decoration: none;
+    color: var(--watermelon)
+}
+
+.border {
+    border: 2px solid var(--watermelon);
+    width: 100%;
+    position: absolute;
 }
 
 #blog-heading {
@@ -96,4 +103,12 @@ footer {
     width: 400px;
     height: 200px;
     resize: none;
+}
+
+#border-header {
+    bottom: 0px;
+}
+
+#border-footer {
+    top: 0px;
 }
