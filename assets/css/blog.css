@@ -26,6 +26,7 @@ body {
 }
 
 header {
+    position: relative;
     font-size: 150%;
     display: flex;
     flex-direction: column;
@@ -37,12 +38,22 @@ header {
 
 main {
     flex: 1 0 auto;
-    width: 96%;
+    width: 100%;
     display: flex;
     flex-flow: column;
     align-items: center;
     justify-content: flex-start;
     font-size: 125%;
+    color: black;
+    margin-left: 20px;
+}
+
+main h3 {
+    display: flex;
+    align-items: flex-start;
+    width:100%;
+    text-align: left;
+    margin-left: 30px;
 }
 
 footer {
@@ -61,10 +72,31 @@ a {
     color: var(--watermelon)
 }
 
+.border {
+    border: 2px solid var(--watermelon);
+    width: 100%;
+    position: absolute;
+}
+
 .content {
+    display: flex;
+    flex-flow: row wrap;
+    width: 75%;
     font-size: 80%;
+    margin: 3px;
 }
 
 .author {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
     font-size: 50%;
+}
+
+#border-header {
+    bottom: 0px;
+}
+
+#border-footer {
+    top: 0px;
 }

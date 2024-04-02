@@ -27,18 +27,17 @@ body {
 
 header {
     position: relative;
-    font-size: 150%;
+    font-size: 100%;
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 15px;
+    padding: 25px;
     background-color: var(--sky);
     text-align: center;
 }
 
 main {
-    flex: 1 0 100%;
-    width: 96%;
+    width: 100%;
 }
 
 form {
@@ -61,7 +60,7 @@ footer {
     line-height: 1.5;
     text-align: center;
     width: 100%;
-    padding: 20px;
+    padding: 25px;
     flex-shrink: 0;
     background-color: var(--sky);
 }
@@ -100,9 +99,17 @@ a {
 
 #blog-post {
     flex: 0 0 100%;
-    width: 400px;
-    height: 200px;
+    width: 200px;
+    height: 100px;
     resize: none;
+}
+
+#blog-post-section label {
+    display: block;
+}
+
+#blog-post-section textarea {
+    display: block;
 }
 
 #border-header {
