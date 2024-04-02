@@ -56,8 +56,8 @@ form {
 }
 
 form section {
-    margin: 5px;
-    padding: 5px; 
+    margin: 5px 0;
+    padding: 5px 0; 
 }
 
 footer {
@@ -76,6 +76,10 @@ footer.dark-mode {
     background-color: var(--darkpurple);
 }
 
+footer.contact {
+    padding: 5px 0;
+}
+
 a {
     text-decoration: none;
     color: var(--watermelon)
@@ -92,9 +96,7 @@ a {
 }
 
 .div-switch {
-    position: absolute;
-    top: 10px;
-    right: 10px;
+    padding: 2px 0;
 }
 
 .switch {
@@ -174,14 +176,6 @@ input:checked + .slider:before {
     text-align: center;
 }
 
-/* #full-name-section {
-    flex: 0 0 45%;
-}
-
-#title-section {
-    flex: 0 0 45%;
-} */
-
 #blog-post-section {
     flex: 0 0 100%;
 }
@@ -191,7 +185,6 @@ input:checked + .slider:before {
 }
 
 #blog-post {
-    flex: 0 0 100%;
     width: 200px;
     height: 100px;
     resize: none;
@@ -212,3 +205,67 @@ input:checked + .slider:before {
 #border-footer {
     top: 0px;
 }
+
+#submit {
+    width: 100px;
+    height: 50px;
+    background-color: lightslategray;
+    color: #000;
+    font-size: 150%;
+}
+
+@media screen and (min-width: 768px) {
+    form {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .div-switch {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    #full-name-section {
+        flex: 0 0 45%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #title-section {
+        flex: 0 0 45%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #blog-post-section {
+        flex: 1 0 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #submit-section {
+        flex: 0 0 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #blog-post {
+        width: 700px;
+        height: 300px;
+        resize: none;
+    }
+}
+
+/* @media screen and (min-width: 992px) {
+    .topPBorder,
+    .bottomPBorder {
+        width: 100%;
+    }
+} */

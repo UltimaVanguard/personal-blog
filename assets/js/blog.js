@@ -15,6 +15,9 @@ const init = function() {
             const h3 = document.createElement('h3');
             const pContent = document.createElement('p');
             const pName = document.createElement('p');
+            const blogSection = document.createElement('section');
+            const topPBorder = document.createElement('p');
+            const bottomPBorder = document.createElement('p');
 
             h3.textContent = blogArray[i].title;
             pContent.textContent = blogArray[i].content;
@@ -22,9 +25,14 @@ const init = function() {
             pName.textContent = "Author: " + blogArray[i].name;
             pName.classList.add("author")
 
-            document.body.children[1].appendChild(h3);
-            document.body.children[1].appendChild(pContent);
-            document.body.children[1].appendChild(pName);
+            document.body.children[1].children[0].appendChild(blogSection);
+            document.body.children[1].children[0].children[i].appendChild(topPBorder);
+            topPBorder.setAttribute('class', 'topPBorder');
+            document.body.children[1].children[0].children[i].appendChild(h3);
+            document.body.children[1].children[0].children[i].appendChild(pContent);
+            document.body.children[1].children[0].children[i].appendChild(pName);
+            document.body.children[1].children[0].children[i].appendChild(bottomPBorder);
+            bottomPBorder.setAttribute('class', 'bottomPBorder');
         }
     }
 
