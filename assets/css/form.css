@@ -24,8 +24,6 @@ body {
     flex-direction: column;
     align-items: center;
     line-height: 1.5;
-    background-color: var(--neutral);
-    color: var(--carbon);
 }
 
 header {
@@ -33,7 +31,6 @@ header {
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-color: var(--sky);
     text-align: center;
 }
 

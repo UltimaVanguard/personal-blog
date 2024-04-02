@@ -1,7 +1,14 @@
-const init = function() {
-    let blogArray = JSON.parse(localStorage.getItem("blog"))
+const themeToggle = document.querySelector('#theme-switcher');
+const themeText = document.querySelector('.theme');
+const header = document.querySelector('header');
+const main = document.querySelector('main');
+const footer = document.querySelector('footer');
 
-    console.log(blogArray);
+let theme = '';
+
+const init = function() {
+    let blogArray = JSON.parse(localStorage.getItem("blog"));
+    theme = localStorage.getItem("theme");
 
     if (blogArray !== null) {
         for (i = 0; i < blogArray.length; i++) {
@@ -20,6 +27,36 @@ const init = function() {
             document.body.children[1].appendChild(pName);
         }
     }
+
+    if (theme === 'dark') {
+        document.body.setAttribute('class', 'dark-mode');
+        header.setAttribute('class', "dark-mode");
+        main.setAttribute('class', 'dark-mode');
+        footer.setAttribute('class', "dark-mode");
+        themeText.textContent = "DARK MODE";
+    } else {
+        theme = 'light';
+    }
 }
+
+themeToggle.addEventListener('click', function(event) {
+    if (theme === 'dark') {
+        document.body.setAttribute('class', 'light-mode');
+        header.setAttribute('class', "light-mode");
+        main.setAttribute('class', 'light-mode');
+        footer.setAttribute('class', "light-mode");
+        themeText.textContent = "LIGHT MODE";
+        theme = "light";
+    } else {
+        document.body.setAttribute('class', 'dark-mode');
+        header.setAttribute('class', 'dark-mode');
+        main.setAttribute('class', 'dark-mode')
+        footer.setAttribute('class', "dark-mode");
+        themeText.textContent = "DARK MODE";
+        theme = "dark";
+    }
+
+    localStorage.setItem("theme", theme);
+});
 
 init();
