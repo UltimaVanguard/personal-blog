@@ -7,41 +7,49 @@
         <link rel="stylesheet" type="text/css" href="./assets/css/form.css"/>
     </head>
 
-    <body>
-        <header>
+    <body class="light-mode">
+        <header class="light-mode">
             <h1>Personal Blog</h1>
             <nav>
                 <p><a href="./blog.html">Entries</a></p>
             </nav>
             <p class="border" id="border-header"></p>
+            <div class="div-switch">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            <p class="theme">LIGHT MODE</p>
+            </div>
         </header>
 
-        <main>
-            <form id="blog-form">
-                <h2 id="blog-heading">Blog Entry</h2>
-                <section class="blog-form" id="full-name-section">
-                    <label for="full-name">Name:</label>
-                    <input type="text" name="full-name" id="full-name" placeholder="First Last"/>
-                </section>
-                <section class="blog-form" id="title-section">
-                    <label for="title">Blog Title:</label>
-                    <input type="text" name="title" id="title" placeholder="Title"/>
-                </section>
-                <section class="blog-form" id="blog-post-section">
-                    <label for="blog-post">Blog Post:</label>
-                    <textarea name="blog-post" id="blog-post" placeholder="Post"></textarea>
-                </section>
-                <section class="blog-form" id="submit-section">
-                    <button id="submit">Submit</button>
-                </section>
-            </form>
-        </main>
+        <div class="wrapper">
+            <main>
+                <form id="blog-form">
+                    <h2 id="blog-heading">Blog Entry</h2>
+                    <section class="blog-form" id="full-name-section">
+                        <label for="full-name">Name:</label>
+                        <input type="text" name="full-name" id="full-name" placeholder="First Last"/>
+                    </section>
+                    <section class="blog-form" id="title-section">
+                        <label for="title">Blog Title:</label>
+                        <input type="text" name="title" id="title" placeholder="Title"/>
+                    </section>
+                    <section class="blog-form" id="blog-post-section">
+                        <label for="blog-post">Blog Post:</label>
+                        <textarea name="blog-post" id="blog-post" placeholder="Post"></textarea>
+                    </section>
+                    <section class="blog-form" id="submit-section">
+                        <button id="submit">Submit</button>
+                    </section>
+                </form>
+            </main>
 
+            <footer class="light-mode">
+                <p class="border" id="border-footer"></p>
+                <p>Created by <a href="https://ultimavanguard.github.io/eugene-mcclellan-portfolio/">Eugene McClellan</a></p>
+            </footer>
+        </div>
         <script src="./assets/js/form.js"></script>
     </body>
-
-    <footer>
-        <p class="border" id="border-footer"></p>
-        <p>Created by <a href="https://ultimavanguard.github.io/eugene-mcclellan-portfolio/">Eugene McClellan</a></p>
-    </footer>
 </html>
