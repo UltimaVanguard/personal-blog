@@ -38,13 +38,33 @@ header {
 main {
     flex: 1 0 auto;
     width: 96%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 125%;
 }
 
 footer {
+    position: relative;
     font-size: 125%;
     line-height: 1.5;
     text-align: center;
-    width: 96%;
-    margin: 20px;
+    width: 100%;
+    padding: 20px;
     flex-shrink: 0;
+    background-color: var(--sky);
+}
+
+a {
+    text-decoration: none;
+    color: var(--watermelon)
+}
+
+.content {
+    font-size: 80%;
+}
+
+.author {
+    font-size: 50%;
 }

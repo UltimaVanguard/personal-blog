@@ -11,7 +11,9 @@ const init = function() {
 
             h3.textContent = blogArray[i].title;
             pContent.textContent = blogArray[i].content;
-            pName.textContent = blogArray[i].name;
+            pContent.classList.add("content");
+            pName.textContent = "Author: " + blogArray[i].name;
+            pName.classList.add("author")
 
             document.body.children[1].appendChild(h3);
             document.body.children[1].appendChild(pContent);
