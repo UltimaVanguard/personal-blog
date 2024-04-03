@@ -40,7 +40,7 @@ On the blog entries page the "Go Back" link takes you back to the blog entry pag
 
 ## Credits
 
-N/A
+Used the toggle button from 04-Web-APIs in the course.
 
 ## License
 
