@@ -30,7 +30,7 @@ const init = function() {
             h3.textContent = blogArray[i].title;
             pContent.textContent = blogArray[i].content;
             pContent.classList.add("content");
-            pName.textContent = "Author: " + blogArray[i].name;
+            pName.textContent = "Author: " + blogArray[i].author;
             pName.classList.add("author")
 
             // appends the elements to the main section

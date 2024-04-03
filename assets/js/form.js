@@ -35,7 +35,7 @@ formEl.addEventListener('submit', function(event) {
 
     // defining a blog entry object
     const blogEntry = {
-        name: nameInput.value,
+        author: nameInput.value,
         title: titleInput.value,
         content: contentInput.value,
     }
