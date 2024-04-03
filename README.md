@@ -26,7 +26,17 @@ Clicking on my name in the footer will take you to my portfolio page.
 
 On the blog entries page the "Go Back" link takes you back to the blog entry page and the footer and my name take you to the footer and my portfolio respectively.
 
-![alt text](https://github.com/UltimaVanguard/eugene-mcclellan-portfolio/blob/main/assets/images/Website.png)
+![alt text](https://github.com/UltimaVanguard/personal-blog/blob/main/assets/images/blog-form.png)
+
+![alt text](https://github.com/UltimaVanguard/personal-blog/blob/main/assets/images/blog-form-dark.png)
+
+![alt text](https://github.com/UltimaVanguard/personal-blog/blob/main/assets/images/alert.png)
+
+![alt text](https://github.com/UltimaVanguard/personal-blog/blob/main/assets/images/local-storage.png)
+
+![alt text](https://github.com/UltimaVanguard/personal-blog/blob/main/assets/images/blog-entries.png)
+
+![alt text](https://github.com/UltimaVanguard/personal-blog/blob/main/assets/images/footer.png)
 
 ## Credits
 

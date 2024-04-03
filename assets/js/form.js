@@ -16,6 +16,11 @@ let theme = '';
 // initial function to pull array and theme from local storage
 let init = function() {
     blogArray = JSON.parse(localStorage.getItem("blog"));
+
+    if (!blogArray) {
+        blogArray = [];
+    }
+    
     theme = localStorage.getItem("theme");
 
     // setting current theme on load
