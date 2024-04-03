@@ -2,7 +2,9 @@
 
 ## Description
 
-I am creating a portfolio website as a place to store the work I create in a central location and as a way to easily link employers to my work. I also used this as a test for myself on trying a mobile-first approach.
+I am creating a personal blog page to keep track of what I am learning in class
+and use it as a way to put down my thoughts on certain subjects, any gotchas. A
+place to keep my thoughts in one place to use as a review for myself later.
 
 ## Installation
 
