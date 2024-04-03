@@ -3,17 +3,21 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Personal Blog</title>
+        <title>Blog Entry</title>
         <link rel="stylesheet" type="text/css" href="./assets/css/form.css"/>
     </head>
 
+    <!-- Class to change between Light and Dark Mode -->
     <body class="light-mode">
+        <!-- Header Section -->
         <header class="light-mode">
             <h1>Personal Blog</h1>
+            <!-- Links to Blogs Page and the Footer -->
             <nav>
                 <p><a href="./blog.html">Entries</a></p>
                 <p><a href="#contact">Footer</a></p>
             </nav>
+            <!-- Light/Dark Mode toggle switch -->
             <div class="div-switch">
                 <label class="switch">
                     <input type="checkbox" id="theme-switcher">
@@ -21,11 +25,15 @@
                 </label>
                 <p class="theme">LIGHT MODE</p>
             </div>
+            <!-- Border at bottom of header -->
             <p class="border" id="border-header"></p>
         </header>
 
+        <!-- Main Content Section -->
+        <!-- Gets footer to bottom of page with little content -->
         <div class="wrapper">
             <main>
+                <!-- Form for filling out blog entries -->
                 <form id="blog-form">
                     <h2 id="blog-heading">Blog Entry</h2>
                     <section class="blog-form" id="full-name-section">
@@ -46,11 +54,16 @@
                 </form>
             </main>
 
+            <!-- Footer Section -->
             <footer class="light-mode" id="contact">
+                <!-- Border at top of Footer -->
                 <p class="border" id="border-footer"></p>
+                <!-- Link to my portfolio -->
                 <p class="contact">Created by <a href="https://ultimavanguard.github.io/eugene-mcclellan-portfolio/">Eugene McClellan</a></p>
             </footer>
         </div>
+
+        <!-- JavaScript link -->
         <script src="./assets/js/form.js"></script>
     </body>
 </html>

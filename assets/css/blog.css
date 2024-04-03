@@ -1,3 +1,4 @@
+/* Variables */
 :root {
     --neutral: #EFEFEF;
     --watermelon: #FF3B3F;
@@ -8,11 +9,13 @@
     --darkpurple: #301934;
 }
 
+/* Universale Selector */
 * {
     margin: 0px;
     padding: 0px;
 }
 
+/* CSS for body and html */
 html,
 body {
     width: 100%;
@@ -27,6 +30,7 @@ body {
     line-height: 1.5;
 }
 
+/* CSS for header section */
 header {
     position: relative;
     display: flex;
@@ -43,6 +47,7 @@ header.dark-mode {
     background-color: var(--darkpurple);
 }
 
+/* CSS for main section */
 main {
     width: 100%;
     display: flex;
@@ -50,7 +55,6 @@ main {
     align-items: center;
     justify-content: flex-start;
     font-size: 125%;
-    /* margin-left: 20px; */
 }
 
 main.light-mode {
@@ -61,7 +65,7 @@ main.dark-mode {
     color: var(--white)
 }
 
-
+/* CSS for section containing the blogs */
 section {
     width: 100%;
     display: flex;
@@ -76,9 +80,9 @@ section h3 {
     align-items: flex-start;
     width:100%;
     text-align: left;
-    /* margin-left: 30px; */
 }
 
+/* CSS for footer */
 footer {
     position: relative;
     font-size: 125%;
@@ -100,22 +104,26 @@ footer.contact {
     padding: 5px 0;
 }
 
+/* CSS for a elements */
 a {
     text-decoration: none;
     color: var(--watermelon)
 }
 
+/* CSS to create header and footer border */
 .border {
     border: 2px solid var(--watermelon);
     width: 100%;
 }
 
+/* CSS to create border between blogs */
 .topPBorder,
 .bottomPBorder {
     border: 2px solid lightslategray;
     width: 75%;
 }
 
+/* CSS for light and dark mode  */
 .light-mode {
     background-color: var(--neutral);
     color: var(--carbon);
@@ -126,6 +134,7 @@ a {
     color: var(--white);
 }
 
+/* CSS for toggle button */
 .div-switch {
     padding: 2px 0;
 }
@@ -189,6 +198,7 @@ input:checked + .slider:before {
     border-radius: 50%;
 }
 
+/* CSS so footer is at the bottom of the screen */
 .wrapper {
     display: flex;
     min-height: 100vh;
@@ -197,6 +207,7 @@ input:checked + .slider:before {
     justify-content: space-between;
 }
 
+/* CSS for individual bog entry sections */
 .content {
     display: flex;
     flex-flow: row wrap;
@@ -213,6 +224,7 @@ input:checked + .slider:before {
     font-size: 60%;
 }
 
+/* CSS for header and footer borders */
 #border-header {
     bottom: 0px;
 }
@@ -221,6 +233,7 @@ input:checked + .slider:before {
     top: 0px;
 }
 
+/* CSS for medium screens */
 @media screen and (min-width: 768px) {
     section h3 {
         align-items: center;
@@ -237,6 +250,7 @@ input:checked + .slider:before {
         justify-content: center;
     }
 
+    /* sets toggle on the right side of the header */
     .div-switch {
         position: absolute;
         top: 10px;
@@ -244,6 +258,7 @@ input:checked + .slider:before {
     }
 }
 
+/* CSS for large screens */
 @media screen and (min-width: 992px) {
     .topPBorder,
     .bottomPBorder {

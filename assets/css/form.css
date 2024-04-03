@@ -1,3 +1,4 @@
+/* Variables */
 :root {
     --neutral: #EFEFEF;
     --watermelon: #FF3B3F;
@@ -8,11 +9,13 @@
     --darkpurple: #301934;
 }
 
+/* Universal Selectors */
 * {
     margin: 0px;
     padding: 0px;
 }
 
+/* CSS for the body and html */
 html,
 body {
     width: 100%;
@@ -26,6 +29,7 @@ body {
     line-height: 1.5;
 }
 
+/* CSS for the header */
 header {
     position: relative;
     display: flex;
@@ -42,10 +46,12 @@ header.dark-mode {
     background-color: var(--darkpurple);
 }
 
+/* CSS for main section  */
 main {
     width: 100%;
 }
 
+/* CSS for the form */
 form {
     display: flex;
     flex-flow: column;
@@ -60,6 +66,7 @@ form section {
     padding: 5px 0; 
 }
 
+/* CSS for the footer */
 footer {
     position: relative;
     font-size: 125%;
@@ -80,11 +87,13 @@ footer.contact {
     padding: 5px 0;
 }
 
+/* CSS for the a element */
 a {
     text-decoration: none;
     color: var(--watermelon)
 }
 
+/* CSS for light/dark mode */
 .light-mode {
     background-color: var(--neutral);
     color: var(--carbon);
@@ -95,6 +104,7 @@ a {
     color: var(--white);
 }
 
+/* CSS for the toggle button */
 .div-switch {
     padding: 2px 0;
 }
@@ -156,13 +166,15 @@ input:checked + .slider:before {
 
 .slider.round:before {
     border-radius: 50%;
-  }
+}
 
+/* CSS for the borders on header and footer */
 .border {
     border: 2px solid var(--watermelon);
     width: 100%;
 }
 
+/* CSS so footer is at the bottom */
 .wrapper {
     display: flex;
     min-height: 100vh;
@@ -171,6 +183,7 @@ input:checked + .slider:before {
     justify-content: space-between;
 }
 
+/* CSS for the individual form sections */
 #blog-heading {
     flex: 0 0 100%;
     text-align: center;
@@ -190,6 +203,7 @@ input:checked + .slider:before {
     resize: none;
 }
 
+/* CSS so textarea label is above the textarea */
 #blog-post-section label {
     display: block;
 }
@@ -198,14 +212,7 @@ input:checked + .slider:before {
     display: block;
 }
 
-#border-header {
-    bottom: 0px;
-}
-
-#border-footer {
-    top: 0px;
-}
-
+/* CSS for submit button */
 #submit {
     width: 100px;
     height: 50px;
@@ -214,6 +221,16 @@ input:checked + .slider:before {
     font-size: 150%;
 }
 
+/* CSS for the borders */
+#border-header {
+    bottom: 0px;
+}
+
+#border-footer {
+    top: 0px;
+}
+
+/* CSS for medium sized screens */
 @media screen and (min-width: 768px) {
     form {
         flex-direction: row;
@@ -222,6 +239,7 @@ input:checked + .slider:before {
         justify-content: center;
     }
 
+    /* sets toggle switch to the on the right side of the header */
     .div-switch {
         position: absolute;
         top: 10px;
@@ -262,10 +280,3 @@ input:checked + .slider:before {
         resize: none;
     }
 }
-
-/* @media screen and (min-width: 992px) {
-    .topPBorder,
-    .bottomPBorder {
-        width: 100%;
-    }
-} */
