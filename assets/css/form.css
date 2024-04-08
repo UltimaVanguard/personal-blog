@@ -93,6 +93,16 @@ a {
     color: var(--watermelon)
 }
 
+.entries {
+    margin: 0 auto;
+    width: 150px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: lightgray;
+    font-size: 150%;
+    font-weight: bold;
+}
+
 /* CSS for light/dark mode */
 .light-mode {
     background-color: var(--neutral);
