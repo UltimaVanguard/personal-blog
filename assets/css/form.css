@@ -58,7 +58,7 @@ form {
     align-items: center;
     justify-content: flex-start;
     width: 100%;
-    font-size: 125%;
+    font-size: 150%;
 }
 
 form section {
@@ -199,6 +199,16 @@ input:checked + .slider:before {
     text-align: center;
 }
 
+#full-name {
+    font-size: 100%;
+    width: 200px;
+}
+
+#title {
+    font-size: 100%;
+    width: 200px;
+}
+
 #blog-post-section {
     flex: 0 0 100%;
 }
@@ -208,6 +218,7 @@ input:checked + .slider:before {
 }
 
 #blog-post {
+    font-size: 100%;
     width: 200px;
     height: 100px;
     resize: none;
@@ -224,7 +235,7 @@ input:checked + .slider:before {
 
 /* CSS for submit button */
 #submit {
-    width: 100px;
+    width: 150px;
     height: 50px;
     background-color: lightslategray;
     color: #000;
@@ -263,11 +274,19 @@ input:checked + .slider:before {
         align-items: center;
     }
 
+    #full-name {
+        width: 300px;
+    }
+
     #title-section {
         flex: 0 0 45%;
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    #title {
+        width: 300px;
     }
 
     #blog-post-section {
@@ -285,8 +304,24 @@ input:checked + .slider:before {
     }
 
     #blog-post {
-        width: 700px;
-        height: 300px;
-        resize: none;
+        width: 800px;
+        height: 400px;
+    }
+}
+
+@media screen and (min-width: 996px) {
+    #full-name {
+        width: 450px;
+    }
+
+
+    #title {
+        width: 450px;
+    }
+
+    #blog-post {
+        width: 950px;
+        height: 500px;
+
     }
 }
