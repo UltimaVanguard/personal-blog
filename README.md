@@ -40,6 +40,12 @@ On the blog entries page the "Go Back" link takes you back to the blog entry pag
 
 ![alt text](https://github.com/UltimaVanguard/personal-blog/blob/main/assets/images/footer.png)
 
+Updated form
+![alt text](https://github.com/UltimaVanguard/personal-blog/blob/main/assets/images/updated-blog-form.png)
+
+Updated back button
+![alt text](https://github.com/UltimaVanguard/personal-blog/blob/main/assets/images/updated-back-button.png)
+
 ## Credits
 
 Used the toggle button from 04-Web-APIs in the course.
